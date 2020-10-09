@@ -5,7 +5,14 @@ module.exports = {
       'popup': '350px',
       full: '100%'
     },
-    extend: {}
+    colors: {
+      'dsPurple': '#A700FF',
+      'dsYellow': '#FFEA00'
+    },
+    extend: {
+
+    },
+
   },
   variants: {},
   plugins: []

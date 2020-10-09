@@ -5,25 +5,86 @@
 </head>
 
 <body>
-    <div class="p-6 min-w-popup h-64 bg-dsPurple border-dsYellow border-l-4 ">
-        <h1 class="text-gray-500 text-2xl">Hello Web Extension</h1>
-        <p class="py-2 text-lg tracking-wide">
-            Update me in <span
-                class="inline-block bg-gray-100 rounded-sm text-sm p-1 leading-none whitespace-no-wrap text-purple-600 font-mono align-baseline">`src/popup/index.html`</span>
-        </p>
-        <hr />
-        <a href="options.html">OPTION</a>
-        <div class="py-2" x-data="{ open: false }">
-            <button
-                class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-                @click="open = true">
+    <div
+        class="p-2 min-w-popup h-48 bg-gradient-to-b from-dsy1 via-dsy2 to-dsy1 border-dspurple-600 border-l-4 overflow-hidden relative">
+        <h1 class="text-dspurple-600 text-2xl font-medium">DoubleSlasher</h1>
+        <!-- <svg viewBox="0 0 3000.306 3000.099" class=" top-0 right-0 absolute z-0">
+            <defs />
+            <defs>
+                <clipPath id="a">
+                    <path fill="none" d="M168 654h3000.306v3000.099H168z" />
+                </clipPath>
+            </defs>
+            <g clip-path="url(#a)" style="isolation:isolate" transform="translate(-168 -654)">
+                <g opacity=".046">
+                    <g fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)">
+                        <path stroke="none" d="M0 .099h4242v4769H0z" />
+                        <path fill="none" d="M.5.599h4241v4768H.5z" />
+                    </g>
+                    <path fill="rgba(0,0,0,0)"
+                        d="M0 0h4242.306v4769.1H0zm1427.226 400.6L177.173 3672.206l4.921 9.538H738.22L1988.274 414.912V400.6zm1038.43 0L1215.6 3672.206l4.922 9.538h556.128L3026.7 414.912V400.6zm103.351 2694.541v586.6h605.341v-586.6z" />
+                    <path fill="#5a5a5a" d="M2569.007 3081.276h605.341v605.341h-605.341z" />
+                    <path fill="rgba(89,89,89,0.99)"
+                        d="M1429.687 413.403l2.461 12.3L179.634 3799.374l-2.461-12.304zM1985.813 413.403l2.461 12.3L735.76 3799.374l-2.461-12.3zM2468.117 413.403l2.461 12.3-1252.514 3373.671-2.461-12.3zM3024.243 413.403l2.461 12.3L1774.19 3799.374l-2.461-12.3z" />
+                    <path fill="#5a5a5a"
+                        d="M1432.147 413.403h548.747l2.461 7.382L743.141 3757.541l-9.843 41.833H184.555l-2.461-7.383 1240.21-3336.755zM2470.577 413.403h548.747l2.461 7.382-1240.213 3336.756-9.843 41.833h-548.744l-2.461-7.383 1240.21-3336.755z" />
+                </g>
+            </g>
+        </svg> -->
+
+        <div class="flex space-x-2 my-3 z-10">
+
+            <a href="https://slash-podcast.fr/" target="_blank" class=" hover:text-dspurple-500">
+                <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://slash-podcast.fr/podcast-rss-feed.xml" target="_blank" class=" hover:text-dspurple-500">
+                <svg class="w-8 h-8 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z"></path>
+                    <path
+                        d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://chartable.com/teams/double-slash/dashboard/episodes?podcast_id=double-slash"
+                target="_blank" class=" hover:text-dspurple-500">
+                <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                    </path>
+                </svg>
+            </a>
+
+        </div>
+        <hr>
+
+        <h2 class="text-dspurple-600 text-xl font-medium">Organisation</h2>
+        <div class="flex space-x-2 my-3">
+            <a href="https://chartable.com/teams/double-slash/dashboard/episodes?podcast_id=double-slash"
+                target="_blank" class=" hover:text-dspurple-500">
+                <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
+                    </path>
+                </svg>
+            </a>
+
+        </div>
+
+        <!-- <div class="py-2" x-data="{ open: false }">
+            <button class="" @click="open = true">
                 Test Alpine
             </button>
 
             <div class="mt-4 bg-gray-100 text-center rounded-sm" x-show="open" @click.away="open = false">
                 <div class="w-full text-4xl text-teal-500 p-4">Great Scott!</div>
             </div>
-        </div>
+        </div> -->
     </div>
     <script type="text/javascript" src="./popup.dist.js"></script>
 </body>

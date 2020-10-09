@@ -1,0 +1,9 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 66 46" fill="#fff" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+  <use xlink:href="#A" x=".5" y=".5"/>
+  <symbol id="A" overflow="visible">
+    <g stroke="none" fill-rule="nonzero">
+      <path d="M62.603 7.026a8.06 8.06 0 0 0-5.669-5.669C51.964 0 31.96 0 31.96 0S11.955.04 6.984 1.397a8.06 8.06 0 0 0-5.669 5.669C0 12.037 0 22.43 0 22.43s0 10.393 1.356 15.404a8.06 8.06 0 0 0 5.669 5.669C11.995 44.86 32 44.86 32 44.86s20.005 0 24.976-1.356a8.06 8.06 0 0 0 5.669-5.669C64 32.864 64 22.43 64 22.43s-.04-10.393-1.397-15.404z" fill="red"/>
+      <path d="M25.592 32.042l16.595-9.612L25.6 12.818z"/>
+    </g>
+  </symbol>
+</svg>

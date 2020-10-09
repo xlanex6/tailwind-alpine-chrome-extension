@@ -1,7 +1,7 @@
 {
   "name": "Double Slasher Extension",
   "version": "0.0.1",
-  "description": "Change the description of this web extension",
+  "description": "Extension de travail pour les animateurs de //.",
   "manifest_version": 2,
   "browser_action": {
     "default_popup": "./dist/popup.html",
